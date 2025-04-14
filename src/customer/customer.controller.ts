@@ -109,8 +109,8 @@ export class CustomerController {
     return this.customerService.update(id, updateCompanyDto);
   }
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.customerService.block(id);
-  }
+  // @Delete(':id')
+  // remove(@Param('id') id: string) {
+  //   return this.customerService.block(id);
+  // }
 }
