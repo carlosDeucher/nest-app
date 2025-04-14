@@ -48,6 +48,8 @@ export class CustomerController {
       message: 'Customer criado',
       statusCode: 201
     })
+
+    // TO-DO Email de boas vindas após 30 minutos
   }
 
   @Post("create-payment-account/:customerId")
