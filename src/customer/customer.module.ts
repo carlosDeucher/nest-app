@@ -11,6 +11,7 @@ import { CustomerAuthorizationMiddleware } from 'src/shared/middlewares/Customer
   providers: [CustomerService, PrismaService, UserService, CustomerUsersService],
 })
 export class CustomerModule implements NestModule {
+  // TODO Implementar middleware admin
   configure(consumer: MiddlewareConsumer) {
     consumer.apply(CustomerAuthorizationMiddleware).forRoutes({ path: "/customer/:customerId", method: RequestMethod.POST })
   }
